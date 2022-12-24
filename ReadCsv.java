@@ -49,7 +49,7 @@ public class ReadCsv {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SS'Z'"); // 格式化时间戳
             Date date = sdf.parse(rfc3339); // convert RFC3339 to Date
             long unixNano = date.getTime() * 1000000; // convert to UnixNano timestamp 转换为19位纳秒级时间戳
-            result = result + ' ' + unixNano + '\n';
+            result = result + unixNano + '\n';
 
             // 每读完一行，就将这行写入文件中
             FileWriter writer;
