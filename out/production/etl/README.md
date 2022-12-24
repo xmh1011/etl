@@ -44,3 +44,9 @@ public class convertRFC3339ToUnixNano {
     }
 }
 ```
+
+### 用法
+
+```bash
+java ReadCsv <input file path> <output file path>
+```
