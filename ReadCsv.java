@@ -1,6 +1,6 @@
-//import org.apache.flink.api.java.DataSet;
-//import org.apache.flink.api.java.ExecutionEnvironment;
-//import org.apache.flink.api.java.tuple.Tuple3;
+import org.apache.flink.api.java.DataSet;
+import org.apache.flink.api.java.ExecutionEnvironment;
+import org.apache.flink.api.java.tuple.Tuple3;
 
 
 import java.io.*;
@@ -12,7 +12,7 @@ import java.util.Map;
 public class ReadCsv {
     public static void main(String[] args) throws Exception {
         // 代码执行环境
-        //ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
+        ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
         // 读取命令行参数
         String filePath = args[0];
         String resultPath = args[1];
